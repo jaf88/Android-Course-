@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="donaxica.joaquimalves.com.br.xicavendas.DescontoRoupasActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe o Valor da Roupa"
+        android:id="@+id/text_valor_roupa"
+        android:layout_above="@+id/valor_preco"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/valor_preco"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#5dc7c1"
+        android:layout_marginTop="44dp"
+        android:text="Calcular Desconto"
+        android:layout_below="@+id/valor_preco"
+        android:layout_centerHorizontal="true"
+        android:onClick="calcularDesconto" />
+
+</RelativeLayout>
